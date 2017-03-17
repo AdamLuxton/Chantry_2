@@ -1,0 +1,320 @@
+$red: #ff6969;
+$green: #1ea488;
+$darkgrey: #1c1b1b;
+$dancing: 'Dancing Script', cursive;
+$raleway: 'Raleway', sans-serif;
+
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  padding-top: 50px;
+}
+
+h1{
+  font-family: $dancing;
+}
+
+dl{
+  font-family: $raleway;
+}
+
+.pagination li a{
+  color: $green;
+}
+
+.navbar-brand{
+  padding: 12.5px 0;
+}
+
+.navbar-right{
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: background 1s, color 1s !important;
+  .navbar-btn{
+    margin: 20.5px 0;
+    padding: 6px 12px;
+    color: #FFF !important;
+    &:hover{
+      color: $green !important;
+    }
+  }
+}
+
+.text-xs-center{
+  text-align: center;
+}
+
+.text-xs-center-right{
+  text-align: center;
+}
+
+// .navbar-nav, .navbar-right{
+//      li{
+//        a{
+//          font-size: 1.3em;
+//          }
+//        }
+//    }
+
+a{
+
+        &:link,&:visited{
+          text-decoration: none;
+        }
+
+        &:hover{
+          text-decoration: none;
+        }
+
+        &:active{
+          text-decoration: none;
+        }
+
+  }
+
+.jumbotron{
+  background: none;
+  text-align: center;
+  padding: 100px 40px;
+  margin: 0;
+  &::before {
+        content: ' ';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        will-change: transform;
+        background: url(../images/background.jpg) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+      }
+    h1{
+      font-size: 2em;
+      color: #FFF;
+      font-family: $dancing;
+      margin: 0 0 10px 0;
+      //border-bottom: 1px solid #FFF;
+    }
+    p{
+      color: #FFF;
+      font-family: $raleway;
+      font-size: 1em;
+      margin: 10px 0 0 0;
+      .dots{
+        font-size: 2em;
+      }
+    }
+
+    .jumboDiv{
+      padding: 100px 10px;
+      background: none;
+      border: 5px solid #FFF;
+    }
+}
+
+.mhsLogo{
+  height: 150px;
+  margin-top: 20px;
+}
+
+.mainText{
+  padding: 60px 0px;
+  background: #FFF;
+  h1{
+    margin-top: 0;
+  }
+  h2{
+    font-family: $dancing;
+    //font-size: 1.3em;
+  }
+  h3{
+    font-family: $dancing;
+    //font-size: 1.3em;
+  }
+  p{
+    font-family: $raleway;
+  }
+
+}
+
+form{
+  font-family: $raleway;
+  .btn-default{
+    color: #FFF;
+    background: darken($green, 15%);
+  }
+}
+
+.center-table{
+  th{
+    text-align: center;
+  }
+}
+
+.left-table{
+  td{
+      text-align: left;
+  }
+}
+
+#heritageSection{
+  color: #FFF;
+  background: $green;
+  h2{
+    margin-top: 0px;
+  }
+  .btn-default{
+    color: #FFF;
+    background: darken($green, 15%);
+    transition: color 1s, background 1s;
+    &:hover{
+      background: #FFF;
+      color: $green;
+    }
+  }
+}
+
+#Box2{
+  h2{
+  //  margin-top: 0;
+  }
+}
+
+.bottomText{
+  margin-bottom: 40px;
+}
+
+.galleryBox{
+  padding: 0;
+}
+
+#gallery{
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+
+#footerLinks{
+  background: $green;
+  color: #FFF;
+  li{
+    width: 20%;
+    padding: 40px 2.5px;
+    list-style: none;
+    float: left;
+    font-family: $raleway;
+    a h3{
+      color: #FFF;
+      font-size: 1.4em;
+      margin-top: 0;
+    }
+  }
+}
+
+footer{
+  margin: 0;
+  padding: 40px 0 40px 0;
+  background-color: rgb(45, 45, 45);
+  color: #FFF;
+  a{
+    color: #FFF;
+    &:link,&:visited{
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    &:hover{
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    &:active{
+      text-decoration: none;
+      color: darken(#FFF, 15%);
+    }
+  }
+  .footerTitle{
+    font-weight: bold;
+  }
+  ul{
+    padding-left: 0px;
+    padding-top: 30px;
+    li{
+      list-style: none;
+      a{
+        color: darken(#FFF, 15%);
+      }
+    }
+  }
+}
+
+.footer_below{
+  background-color: $green;
+  color: #FFF;
+  padding: 10px 0;
+  margin: 0;
+  p{
+    margin: 0;
+  }
+}
+.map-container{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.map-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+#mapBut{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: #FFF;
+}
+
+/* Medium and up */
+@media screen and (min-width: 48em) {
+
+  .jumbotron{
+
+      h1{
+        font-size: 3em;
+      }
+
+      .jumboDiv{
+        padding: 100px 20px;
+        background: none;
+        border: 5px solid #FFF;
+      }
+  }
+
+  .text-xs-center{
+    text-align: left;
+  }
+
+  .text-xs-center-right{
+    text-align: right;
+  }
+
+}
+
+/* Medium only */
+@media screen and (min-width: 48em) and (max-width: 62em) {}
+
+/* Large and up */
+@media screen and (min-width: 62em) {}
+
+/* Large only */
+@media screen and (min-width: 62em) and (max-width: 75em) {}
+
+/* X-Large and up */
+@media screen and (min-width: 75em) {}
